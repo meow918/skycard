@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: skycard
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: uvicorn bot_ready:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: API_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: WEBHOOK_URL
+        sync: false
