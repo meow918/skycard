@@ -1,4 +1,4 @@
 fastapi
 uvicorn
-aiogram==3.5.1
+aiogram==3.5
 aiohttp
